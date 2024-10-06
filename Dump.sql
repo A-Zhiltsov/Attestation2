@@ -29,7 +29,7 @@ CREATE TABLE `packanimals` (
   `DateOfBirth` date DEFAULT NULL,
   `Commands` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,6 +38,7 @@ CREATE TABLE `packanimals` (
 
 LOCK TABLES `packanimals` WRITE;
 /*!40000 ALTER TABLE `packanimals` DISABLE KEYS */;
+INSERT INTO `packanimals` VALUES (1,'Horse','White','2016-02-04','Trot, Canter, Gallop'),(2,'Horse','Black','2014-05-05','Trot, Canter'),(3,'Camel','Villy','2016-11-03','Walk, Carry Load'),(4,'Camel','Dilly','2018-12-12','Walk, Sit'),(5,'Donkey','Don','2017-09-18','Walk, Carry Load, Bray'),(6,'Donkey','Polly','2019-01-23','Walk, Bray, Kick');
 /*!40000 ALTER TABLE `packanimals` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -55,7 +56,7 @@ CREATE TABLE `pets` (
   `DateOfBirth` date DEFAULT NULL,
   `Commands` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,6 +65,7 @@ CREATE TABLE `pets` (
 
 LOCK TABLES `pets` WRITE;
 /*!40000 ALTER TABLE `pets` DISABLE KEYS */;
+INSERT INTO `pets` VALUES (1,'Dog','Rex','2020-01-01','Sit, Stay, Fetch'),(2,'Dog','Jessy','2019-04-03','Sit, Fetch'),(3,'Cat','Lina','2021-06-14','Sit, Purr'),(4,'Cat','Katty','2005-09-11','Purr'),(5,'Hamster','Bob','2024-02-06','Roll, Spin'),(6,'Hamster','Ron','2024-06-19','Roll, Hide');
 /*!40000 ALTER TABLE `pets` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -76,4 +78,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-06 11:39:42
+-- Dump completed on 2024-10-06 12:03:28
